@@ -1,2 +1,13 @@
 # myGOC
-This backtesting technical analysis makes use of "Ichimoku Kinko Hyo equilibrium" from market index to screen stocks triggering 'BUY' signal
+
+This backtesting technical analysis makes use of "Ichimoku Kinko Hyo Equilibrium" (GOC) from list of stocks to screen potential stocks triggering 'BUY' signal.
+Local path for generating output to MS Excel file and list of security codes can be customized. NASDAQ 100 is used in this example.
+
+Strategy
+========
+
+### Strategy: Ichimoku Kinko Hyo equilibrium
+### Buy if Conv > Base on T-day; and Conv < Base on T-1 day
+### Conv=(Highest High over Period1 + Lowest Low over Period1) divided by 2
+### Base=(Highest High over Period2 + Lowest Low over Period2) divided by 2
+### Period1 = 9 & Period2 = 26    
